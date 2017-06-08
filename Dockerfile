@@ -1,4 +1,4 @@
-FROM library/ubuntu:latest
+FROM library/ubuntu:rolling
 MAINTAINER harman.nagra@gmail.com
 
 # Download and install all packages
