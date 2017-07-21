@@ -146,4 +146,7 @@ if [ "${DHCPD_ENABLED}" == "true" ]; then
   ln -sf /supervisor-confs/supervisor-dhcpd.conf /etc/supervisor/conf.d/supervisor-dhcpd.conf
 fi
 
+# remove dhcpd pid file in case of improper shutdown
+rm -fr /var/run/dhcpd.pid
+
 exec $(which supervisord) -n -c /etc/supervisor/supervisord.conf
