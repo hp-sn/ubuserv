@@ -1,4 +1,4 @@
-FROM library/ubuntu:rolling
+FROM library/debian:latest
 MAINTAINER harman.nagra@gmail.com
 
 # Download and install all packages
